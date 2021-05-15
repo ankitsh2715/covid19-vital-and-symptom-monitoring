@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_button">10dp</dimen>
+    <dimen name="padding_button_large">20dp</dimen>
+    <dimen name="padding_button_small">10dp</dimen>
+</resources>

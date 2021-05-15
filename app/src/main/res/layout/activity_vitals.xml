@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VitalsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:id="@+id/measureHRContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/warning_desc">
+
+            <Button
+                android:id="@+id/measureHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_button"
+                android:text="@string/measure_heart_rate"/>
+
+            <TextView
+                android:id="@+id/heartRateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimary"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/warning_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/empty_view"
+            android:text="@string/desc_heartRate"
+            android:layout_margin="@dimen/margin_button"/>
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/measureRRContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_view">
+
+            <Button
+                android:id="@+id/measureRR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_button"
+                android:text="@string/measure_respiratory_rate"/>
+
+            <TextView
+                android:id="@+id/respRateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimary"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resp_rate_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/measureRRContainer"
+            android:text="@string/desc_resp_rate"
+            android:layout_margin="@dimen/margin_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:padding="@dimen/padding_button_large"
+            android:layout_margin="@dimen/margin_button"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

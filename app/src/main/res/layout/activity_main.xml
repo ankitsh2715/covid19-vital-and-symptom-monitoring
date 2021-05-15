@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_button">
+
+        <Button
+            android:id="@+id/measure_vital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_monitoring"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_vitalSigns"
+            android:layout_below="@id/measure_vital"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin_button">
+
+        <Button
+            android:id="@+id/measure_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symptom_monitoring"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_symptoms"
+            android:layout_below="@id/measure_symptoms"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25">
+
+        <Button
+            android:id="@+id/upload_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/upload_data"
+            android:textSize="20sp"
+            android:padding="@dimen/padding_button_small"
+            android:layout_margin="@dimen/margin_button"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

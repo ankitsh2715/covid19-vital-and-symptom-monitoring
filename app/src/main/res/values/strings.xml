@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Covid19 Symptom Monitoring</string>
+    <string name="sign_monitoring">Measure Vital Signs</string>
+    <string name="symptom_monitoring">Measure Symptoms</string>
+    <string name="desc_vitalSigns">1) Measure Heart Rate using your camera\n2) Measure Respiratory rate using your device accelerometer</string>
+    <string name="desc_symptoms">Record up to ten different symptoms like Fever, cough, shortness of breath, etc.</string>
+    <string name="measure_heart_rate">Check Heart Rate</string>
+    <string name="measure_respiratory_rate">Check Respiratory Rate</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="start">Start</string>
+    <string name="desc_resp_rate">Lie down and place phone on your chest before pressing check button. Your breathing rate will be recorded for 45 seconds.</string>
+    <string name="desc_symptoms_spinner">Select a symtom from drop-down list and corresponding rating.</string>
+    <string name="save">Save</string>
+    <string name="desc_heartRate">!!WARNING - Please provide storage permission before measuring heart rate!!\n\n When click on check button camera window will  open. Turn on flash and place your finger covering flash and camera lens. \n Do not press finger tightly on lens. For accurate reading record video for 45 secs.</string>
+
+    <string-array name="symptoms_array">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore Throat</item>
+        <item>Fever</item>
+        <item>Muscle Ache</item>
+        <item>Loss of Smell or Taste</item>
+        <item>Cough</item>
+        <item>Shortness of Breath</item>
+        <item>Feeling Tired</item>
+    </string-array>
+</resources>
